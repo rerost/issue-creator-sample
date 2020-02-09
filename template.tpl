@@ -29,4 +29,4 @@ jobs:
         export PATH=$PATH:$(go env GOPATH)/bin
         export GO111MODULE=on
         export GITHUBACCESSTOKEN={{`${{ secrets.GITHUB_TOKEN }}`}}
-        {{ range $index, $var := .Commands}}{{$var}} {{- end }}
+        {{ range $index, $var := .Commands}} {{$var}} {{- end }}

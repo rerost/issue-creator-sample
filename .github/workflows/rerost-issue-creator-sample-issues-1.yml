@@ -29,5 +29,5 @@ jobs:
         export PATH=$PATH:$(go env GOPATH)/bin
         export GO111MODULE=on
         export GITHUBACCESSTOKEN=${{ secrets.GITHUB_TOKEN }}
-        issue-creatorcreatehttps://github.com/rerost/issue-creator-sample/issues/1
+         issue-creator create https://github.com/rerost/issue-creator-sample/issues/1
 
