@@ -1,9 +1,9 @@
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: "15/* * * * *"
 
 jobs:
-  issue-create:
+  rerost-issue-creator-sample-issues-1:
     name: Issue Create
     runs-on: ubuntu-latest
     steps:
@@ -29,4 +29,5 @@ jobs:
         export PATH=$PATH:$(go env GOPATH)/bin
         export GO111MODULE=on
         export GITHUBACCESSTOKEN=${{ secrets.GITHUB_TOKEN }}
-        issue-creator create https://github.com/rerost/issue-creator-sample/issues/1
+        issue-creatorcreatehttps://github.com/rerost/issue-creator-sample/issues/1
+
