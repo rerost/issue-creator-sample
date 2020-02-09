@@ -1,4 +1,6 @@
-on: [push]
+on:
+  schedule:
+    - cron: '*/15 * * * *'
 
 jobs:
   issue-create:
