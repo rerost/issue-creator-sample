@@ -23,5 +23,6 @@ jobs:
         go get github.com/rerost/issue-creator
 
     - name: Issue Create
+      run: |
         export GO111MODULE=on
         issue-creator create https://github.com/rerost/issue-creator-sample/issues/1
