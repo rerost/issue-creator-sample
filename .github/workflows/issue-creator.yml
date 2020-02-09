@@ -24,5 +24,6 @@ jobs:
 
     - name: Issue Create
       run: |
+        export PATH=$PATH:$(go env GOPATH)/bin
         export GO111MODULE=on
         issue-creator create https://github.com/rerost/issue-creator-sample/issues/1
